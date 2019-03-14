@@ -12,7 +12,7 @@ public class helloController {
     public String hello(){
         System.out.println("fenzhi");
         System.out.println("hello world");
-        System.out.println("hello worldasda");
+        System.out.println("hello world123123");
         return "HelloWord";
     }
 }
