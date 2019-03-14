@@ -13,6 +13,7 @@ public class helloController {
         System.out.println("fenzhi");
         System.out.println("hello world");
         System.out.println("hello world123123");
+        System.out.println("hello");
         return "HelloWord";
     }
 }
