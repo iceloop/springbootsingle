@@ -11,6 +11,7 @@ public class helloController {
     @RequestMapping(value = {"/springboot"})
     public String hello(){
         System.out.println("fenzhi");
+        System.out.println("hello world");
         return "HelloWord";
     }
 }
