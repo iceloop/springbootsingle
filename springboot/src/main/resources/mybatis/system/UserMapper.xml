@@ -93,7 +93,10 @@
     <select id="userlogin" parameterType="com.example.springboot.entity.user" resultType="com.example.springboot.entity.user">
         SELECT id,username,password,age FROM user WHERE username = #{username} AND password = #{password}
     </select>
-
+    <select id="getuserLogin" parameterType="com.example.springboot.entity.user" resultType="com.example.springboot.entity.user">
+        SELECT id,username,password,age FROM user
+     where 1=1
+    </select>
     <!--新用户注册  方式1-->
     <insert id="adduser" parameterType="com.example.springboot.entity.user" useGeneratedKeys="true" keyProperty="id">
         INSERT INTO user (username,password,age) VALUES (#{username},#{password},#{age})

@@ -5,6 +5,7 @@ import com.example.springboot.mapper.userMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Map;
 
 @Service
@@ -22,6 +23,12 @@ public class UserLoginService {
         user user = usermapper.userlogin(dto);
         return user;
     }
+    public List getuserLogin(user dto){
+
+        List user = usermapper.getuserLogin(dto);
+        return user;
+    }
+
 
     //注册新用户
     public int adduser(user dto){
