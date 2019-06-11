@@ -1,7 +1,5 @@
 package com.example.springboot;
 
-import java.util.Arrays;
-
 public class sortingtest {
     public static void main(String[] args) {
 
@@ -38,27 +36,6 @@ public class sortingtest {
             }
         }
         return a;
-    }
-//希尔排序严格来说是基于插入排序的思想，又被称为缩小增量排序
-    public void sort(int[] arr) {
-        // i表示希尔排序中的第n/2+1个元素（或者n/4+1）
-        // j表示希尔排序中从0到n/2的元素（n/4）
-        // r表示希尔排序中n/2+1或者n/4+1的值
-        int i, j, r, tmp;
-        // 划组排序
-        for(r = arr.length / 2; r >= 1; r = r / 2) {
-            for(i = r; i < arr.length; i++) {
-                tmp = arr[i];
-                j = i - r;
-                // 一轮排序
-                while(j >= 0 && tmp < arr[j]) {
-                    arr[j+r] = arr[j];
-                    j -= r;
-                }
-                arr[j+r] = tmp;
-            }
-            System.out.println(i + ":" + Arrays.toString(arr));
-        }
     }
     //冒泡排序
     public static int[] orderByBubble(int[] a){
@@ -160,5 +137,6 @@ public class sortingtest {
         sort(a,begin,i-1);//递归直到只有一个元素的数组，这时候整个数组就已经排好序
         sort(a,i+1,end);
 
+//        dfv
     }
 }
