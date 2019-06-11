@@ -136,5 +136,7 @@ public class sortingtest {
         a[i]=index;
         sort(a,begin,i-1);//递归直到只有一个元素的数组，这时候整个数组就已经排好序
         sort(a,i+1,end);
+
+//        dfv
     }
 }
